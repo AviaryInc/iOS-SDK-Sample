@@ -39,6 +39,8 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
+
     if ([self pickedImage]) {
         [self displayFeatherWithImage:[self pickedImage]];
         [self setPickedImage:nil];
