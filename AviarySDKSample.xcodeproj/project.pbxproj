@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5EE1444876F00409DA8 /* UIKit.framework */; };
+		D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F01444876F00409DA8 /* Foundation.framework */; };
+		D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */; };
+		D6EFC5F91444876F00409DA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC5F71444876F00409DA8 /* InfoPlist.strings */; };
+		D6EFC5FB1444876F00409DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC5FA1444876F00409DA8 /* main.m */; };
+		D6EFC5FF1444876F00409DA8 /* AFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC5FE1444876F00409DA8 /* AFAppDelegate.m */; };
+		D6EFC6021444876F00409DA8 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC6011444876F00409DA8 /* AFViewController.m */; };
+		D6EFC6051444876F00409DA8 /* AFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6031444876F00409DA8 /* AFViewController_iPhone.xib */; };
+		D6EFC6081444876F00409DA8 /* AFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6061444876F00409DA8 /* AFViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6EFC5EA1444876F00409DA8 /* AviarySDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviarySDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6EFC5EE1444876F00409DA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6EFC5F01444876F00409DA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6EFC5F61444876F00409DA8 /* AviarySDKSample-Info.plist */ = {isa = PBXFileReference; path = "AviarySDKSample-Info.plist"; sourceTree = "<group>"; };
+		D6EFC5F81444876F00409DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6EFC5FA1444876F00409DA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6EFC5FC1444876F00409DA8 /* AviarySDKSample-Prefix.pch */ = {isa = PBXFileReference; path = "AviarySDKSample-Prefix.pch"; sourceTree = "<group>"; };
+		D6EFC5FD1444876F00409DA8 /* AFAppDelegate.h */ = {isa = PBXFileReference; path = AFAppDelegate.h; sourceTree = "<group>"; };
+		D6EFC5FE1444876F00409DA8 /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppDelegate.m; sourceTree = "<group>"; };
+		D6EFC6001444876F00409DA8 /* AFViewController.h */ = {isa = PBXFileReference; path = AFViewController.h; sourceTree = "<group>"; };
+		D6EFC6011444876F00409DA8 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
+		D6EFC6041444876F00409DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController_iPhone.xib; sourceTree = "<group>"; };
+		D6EFC6071444876F00409DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6EFC5E71444876F00409DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */,
+				D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */,
+				D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6EFC5DF1444876E00409DA8 = {
+			isa = PBXGroup;
+			children = (
+				D6EFC5F41444876F00409DA8 /* AviarySDKSample */,
+				D6EFC5ED1444876F00409DA8 /* Frameworks */,
+				D6EFC5EB1444876F00409DA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6EFC5EB1444876F00409DA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC5EA1444876F00409DA8 /* AviarySDKSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6EFC5ED1444876F00409DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC5EE1444876F00409DA8 /* UIKit.framework */,
+				D6EFC5F01444876F00409DA8 /* Foundation.framework */,
+				D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6EFC5F41444876F00409DA8 /* AviarySDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC5FD1444876F00409DA8 /* AFAppDelegate.h */,
+				D6EFC5FE1444876F00409DA8 /* AFAppDelegate.m */,
+				D6EFC6001444876F00409DA8 /* AFViewController.h */,
+				D6EFC6011444876F00409DA8 /* AFViewController.m */,
+				D6EFC6031444876F00409DA8 /* AFViewController_iPhone.xib */,
+				D6EFC6061444876F00409DA8 /* AFViewController_iPad.xib */,
+				D6EFC5F51444876F00409DA8 /* Supporting Files */,
+			);
+			path = AviarySDKSample;
+			sourceTree = "<group>";
+		};
+		D6EFC5F51444876F00409DA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC5F61444876F00409DA8 /* AviarySDKSample-Info.plist */,
+				D6EFC5F71444876F00409DA8 /* InfoPlist.strings */,
+				D6EFC5FA1444876F00409DA8 /* main.m */,
+				D6EFC5FC1444876F00409DA8 /* AviarySDKSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6EFC5E91444876F00409DA8 /* AviarySDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6EFC60B1444876F00409DA8 /* Build configuration list for PBXNativeTarget "AviarySDKSample" */;
+			buildPhases = (
+				D6EFC5E61444876F00409DA8 /* Sources */,
+				D6EFC5E71444876F00409DA8 /* Frameworks */,
+				D6EFC5E81444876F00409DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AviarySDKSample;
+			productName = AviarySDKSample;
+			productReference = D6EFC5EA1444876F00409DA8 /* AviarySDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6EFC5E11444876E00409DA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D6EFC5E41444876E00409DA8 /* Build configuration list for PBXProject "AviarySDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6EFC5DF1444876E00409DA8;
+			productRefGroup = D6EFC5EB1444876F00409DA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6EFC5E91444876F00409DA8 /* AviarySDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6EFC5E81444876F00409DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EFC5F91444876F00409DA8 /* InfoPlist.strings in Resources */,
+				D6EFC6051444876F00409DA8 /* AFViewController_iPhone.xib in Resources */,
+				D6EFC6081444876F00409DA8 /* AFViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6EFC5E61444876F00409DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6EFC5FB1444876F00409DA8 /* main.m in Sources */,
+				D6EFC5FF1444876F00409DA8 /* AFAppDelegate.m in Sources */,
+				D6EFC6021444876F00409DA8 /* AFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6EFC5F71444876F00409DA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6EFC5F81444876F00409DA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6EFC6031444876F00409DA8 /* AFViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6EFC6041444876F00409DA8 /* en */,
+			);
+			name = AFViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		D6EFC6061444876F00409DA8 /* AFViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6EFC6071444876F00409DA8 /* en */,
+			);
+			name = AFViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6EFC6091444876F00409DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6EFC60A1444876F00409DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6EFC60C1444876F00409DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AviarySDKSample/AviarySDKSample-Prefix.pch";
+				INFOPLIST_FILE = "AviarySDKSample/AviarySDKSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6EFC60D1444876F00409DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AviarySDKSample/AviarySDKSample-Prefix.pch";
+				INFOPLIST_FILE = "AviarySDKSample/AviarySDKSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6EFC5E41444876E00409DA8 /* Build configuration list for PBXProject "AviarySDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EFC6091444876F00409DA8 /* Debug */,
+				D6EFC60A1444876F00409DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6EFC60B1444876F00409DA8 /* Build configuration list for PBXNativeTarget "AviarySDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6EFC60C1444876F00409DA8 /* Debug */,
+				D6EFC60D1444876F00409DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6EFC5E11444876E00409DA8 /* Project object */;
+}
