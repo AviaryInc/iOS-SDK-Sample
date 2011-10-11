@@ -6,8 +6,10 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface AFViewController : UIViewController
+
+@property (retain, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)chooseButtonPressed:(id)sender;
 
 @end

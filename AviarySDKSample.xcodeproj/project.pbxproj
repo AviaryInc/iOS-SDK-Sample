@@ -16,6 +16,10 @@
 		D6EFC6021444876F00409DA8 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC6011444876F00409DA8 /* AFViewController.m */; };
 		D6EFC6051444876F00409DA8 /* AFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6031444876F00409DA8 /* AFViewController_iPhone.xib */; };
 		D6EFC6081444876F00409DA8 /* AFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6061444876F00409DA8 /* AFViewController_iPad.xib */; };
+		D6EFC6211444893400409DA8 /* libAviarySDK-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC61D1444893400409DA8 /* libAviarySDK-universal.a */; };
+		D6EFC6221444893400409DA8 /* AviarySDK-Core.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC61F1444893400409DA8 /* AviarySDK-Core.bundle */; };
+		D6EFC6231444893400409DA8 /* AviarySDK-Plugins.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6201444893400409DA8 /* AviarySDK-Plugins.bundle */; };
+		D6EFC6251444898200409DA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC6241444898200409DA8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,12 @@
 		D6EFC6011444876F00409DA8 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
 		D6EFC6041444876F00409DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController_iPhone.xib; sourceTree = "<group>"; };
 		D6EFC6071444876F00409DA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController_iPad.xib; sourceTree = "<group>"; };
+		D6EFC61B1444893400409DA8 /* AFFeatherConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFFeatherConstants.h; sourceTree = "<group>"; };
+		D6EFC61C1444893400409DA8 /* AFFeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFFeatherController.h; sourceTree = "<group>"; };
+		D6EFC61D1444893400409DA8 /* libAviarySDK-universal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libAviarySDK-universal.a"; sourceTree = "<group>"; };
+		D6EFC61F1444893400409DA8 /* AviarySDK-Core.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "AviarySDK-Core.bundle"; sourceTree = "<group>"; };
+		D6EFC6201444893400409DA8 /* AviarySDK-Plugins.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "AviarySDK-Plugins.bundle"; sourceTree = "<group>"; };
+		D6EFC6241444898200409DA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EFC6251444898200409DA8 /* QuartzCore.framework in Frameworks */,
 				D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */,
 				D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */,
 				D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */,
+				D6EFC6211444893400409DA8 /* libAviarySDK-universal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +64,7 @@
 		D6EFC5DF1444876E00409DA8 = {
 			isa = PBXGroup;
 			children = (
+				D6EFC6191444893400409DA8 /* AviarySDK */,
 				D6EFC5F41444876F00409DA8 /* AviarySDKSample */,
 				D6EFC5ED1444876F00409DA8 /* Frameworks */,
 				D6EFC5EB1444876F00409DA8 /* Products */,
@@ -69,6 +82,7 @@
 		D6EFC5ED1444876F00409DA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6EFC6241444898200409DA8 /* QuartzCore.framework */,
 				D6EFC5EE1444876F00409DA8 /* UIKit.framework */,
 				D6EFC5F01444876F00409DA8 /* Foundation.framework */,
 				D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */,
@@ -99,6 +113,35 @@
 				D6EFC5FC1444876F00409DA8 /* AviarySDKSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6EFC6191444893400409DA8 /* AviarySDK */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC61A1444893400409DA8 /* Headers */,
+				D6EFC61D1444893400409DA8 /* libAviarySDK-universal.a */,
+				D6EFC61E1444893400409DA8 /* Resources */,
+			);
+			name = AviarySDK;
+			path = AviarySDK/AviarySDK;
+			sourceTree = "<group>";
+		};
+		D6EFC61A1444893400409DA8 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC61B1444893400409DA8 /* AFFeatherConstants.h */,
+				D6EFC61C1444893400409DA8 /* AFFeatherController.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		D6EFC61E1444893400409DA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6EFC61F1444893400409DA8 /* AviarySDK-Core.bundle */,
+				D6EFC6201444893400409DA8 /* AviarySDK-Plugins.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +197,8 @@
 				D6EFC5F91444876F00409DA8 /* InfoPlist.strings in Resources */,
 				D6EFC6051444876F00409DA8 /* AFViewController_iPhone.xib in Resources */,
 				D6EFC6081444876F00409DA8 /* AFViewController_iPad.xib in Resources */,
+				D6EFC6221444893400409DA8 /* AviarySDK-Core.bundle in Resources */,
+				D6EFC6231444893400409DA8 /* AviarySDK-Plugins.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +265,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -239,6 +288,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -254,6 +307,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/AviarySDK\"",
+					"\"$(SRCROOT)/AviarySDK/AviarySDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -269,6 +323,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/AviarySDK\"",
+					"\"$(SRCROOT)/AviarySDK/AviarySDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
