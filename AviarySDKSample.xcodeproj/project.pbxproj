@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5EE1444876F00409DA8 /* UIKit.framework */; };
-		D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F01444876F00409DA8 /* Foundation.framework */; };
-		D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */; };
+		D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5EE1444876F00409DA8 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F01444876F00409DA8 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D6EFC5F91444876F00409DA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC5F71444876F00409DA8 /* InfoPlist.strings */; };
 		D6EFC5FB1444876F00409DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC5FA1444876F00409DA8 /* main.m */; };
 		D6EFC5FF1444876F00409DA8 /* AFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC5FE1444876F00409DA8 /* AFAppDelegate.m */; };
 		D6EFC6021444876F00409DA8 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6EFC6011444876F00409DA8 /* AFViewController.m */; };
 		D6EFC6051444876F00409DA8 /* AFViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6031444876F00409DA8 /* AFViewController_iPhone.xib */; };
 		D6EFC6081444876F00409DA8 /* AFViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6061444876F00409DA8 /* AFViewController_iPad.xib */; };
-		D6EFC6211444893400409DA8 /* libAviarySDK-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC61D1444893400409DA8 /* libAviarySDK-universal.a */; };
+		D6EFC6211444893400409DA8 /* libAviarySDK-universal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC61D1444893400409DA8 /* libAviarySDK-universal.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D6EFC6221444893400409DA8 /* AviarySDK-Core.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC61F1444893400409DA8 /* AviarySDK-Core.bundle */; };
 		D6EFC6231444893400409DA8 /* AviarySDK-Plugins.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6EFC6201444893400409DA8 /* AviarySDK-Plugins.bundle */; };
-		D6EFC6251444898200409DA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC6241444898200409DA8 /* QuartzCore.framework */; };
+		D6EFC6251444898200409DA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC6241444898200409DA8 /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -264,7 +264,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-ObjC",
@@ -286,7 +286,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -349,6 +349,7 @@
 				D6EFC60D1444876F00409DA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
