@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6C5E990145AF69D00548502 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5E98F145AF69D00548502 /* CoreText.framework */; };
 		D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5EE1444876F00409DA8 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F01444876F00409DA8 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D6EFC5F31444876F00409DA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F21444876F00409DA8 /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6C5E98F145AF69D00548502 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		D6EFC5EA1444876F00409DA8 /* AviarySDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviarySDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFC5EE1444876F00409DA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6EFC5F01444876F00409DA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C5E990145AF69D00548502 /* CoreText.framework in Frameworks */,
 				D6EFC6251444898200409DA8 /* QuartzCore.framework in Frameworks */,
 				D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */,
 				D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */,
@@ -64,6 +67,7 @@
 		D6EFC5DF1444876E00409DA8 = {
 			isa = PBXGroup;
 			children = (
+				D6C5E98F145AF69D00548502 /* CoreText.framework */,
 				D6EFC6191444893400409DA8 /* AviarySDK */,
 				D6EFC5F41444876F00409DA8 /* AviarySDKSample */,
 				D6EFC5ED1444876F00409DA8 /* Frameworks */,

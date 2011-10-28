@@ -8,6 +8,7 @@
 
 #import "AFViewController.h"
 #import "AFFeatherController.h"
+#import "AFFeatherConstants.h"
 
 @interface AFViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate, AFFeatherDelegate>
 
@@ -103,6 +104,12 @@
 - (void)displayFeatherWithImage:(UIImage *)image
 {
     if (image) {
+        //
+        // Use the following two lines to include the meme tool if desired.
+        //
+        // NSArray *tools = [AFDefaultTools() arrayByAddingObject:kAFMeme];
+        // AFFeatherController *featherController = [[[AFFeatherController alloc] initWithImage:image andTools:tools] autorelease];
+        //
         AFFeatherController *featherController = [[[AFFeatherController alloc] initWithImage:image] autorelease];
         [featherController setDelegate:self];
         [self presentModalViewController:featherController animated:YES];
