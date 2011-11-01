@@ -67,7 +67,6 @@
 		D6EFC5DF1444876E00409DA8 = {
 			isa = PBXGroup;
 			children = (
-				D6C5E98F145AF69D00548502 /* CoreText.framework */,
 				D6EFC6191444893400409DA8 /* AviarySDK */,
 				D6EFC5F41444876F00409DA8 /* AviarySDKSample */,
 				D6EFC5ED1444876F00409DA8 /* Frameworks */,
@@ -86,6 +85,7 @@
 		D6EFC5ED1444876F00409DA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5E98F145AF69D00548502 /* CoreText.framework */,
 				D6EFC6241444898200409DA8 /* QuartzCore.framework */,
 				D6EFC5EE1444876F00409DA8 /* UIKit.framework */,
 				D6EFC5F01444876F00409DA8 /* Foundation.framework */,
