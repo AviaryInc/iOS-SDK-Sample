@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class AFViewController;
+@class AFSampleViewController;
 
 @interface AFAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, retain) UIWindow *window;
-@property (nonatomic, retain) AFViewController *viewController;
+@property (nonatomic, retain) AFSampleViewController *viewController;
 
 @end

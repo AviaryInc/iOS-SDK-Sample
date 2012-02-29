@@ -8,7 +8,7 @@
 
 #import "AFAppDelegate.h"
 
-#import "AFViewController.h"
+#import "AFSampleViewController.h"
 
 @implementation AFAppDelegate
 
@@ -27,9 +27,9 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[AFViewController alloc] initWithNibName:@"AFViewController_iPhone" bundle:nil] autorelease];
+        self.viewController = [[[AFSampleViewController alloc] initWithNibName:@"AFSampleViewController_iPhone" bundle:nil] autorelease];
     } else {
-        self.viewController = [[[AFViewController alloc] initWithNibName:@"AFViewController_iPad" bundle:nil] autorelease];
+        self.viewController = [[[AFSampleViewController alloc] initWithNibName:@"AFSampleViewController_iPad" bundle:nil] autorelease];
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

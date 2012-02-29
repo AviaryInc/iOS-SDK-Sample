@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Aviary, Inc. All rights reserved.
 //
 
-@interface AFViewController : UIViewController
+@interface AFSampleViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UIImageView *imageView;
 

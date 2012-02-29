@@ -6,20 +6,19 @@
 //  Copyright (c) 2011 Aviary, Inc. All rights reserved.
 //
 
-#import "AFViewController.h"
-#import "AFFeatherController.h"
-#import "AFFeatherConstants.h"
+#import "AFSampleViewController.h"
+#import "AFPhotoEditorController.h"
 
-@interface AFViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate, AFFeatherDelegate>
+@interface AFSampleViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate, AFPhotoEditorControllerDelegate>
 
 @property (nonatomic, retain) UIImage *pickedImage;
 @property (nonatomic, retain) UIPopoverController *popoverController;
 
-- (void)displayFeatherWithImage:(UIImage *)image;
+- (void)displayPhotoEditorWithImage:(UIImage *)image;
 
 @end
 
-@implementation AFViewController
+@implementation AFSampleViewController
 
 @synthesize imageView;
 @synthesize pickedImage;
@@ -43,7 +42,7 @@
     [super viewDidAppear:animated];
 
     if ([self pickedImage]) {
-        [self displayFeatherWithImage:[self pickedImage]];
+        [self displayPhotoEditorWithImage:[self pickedImage]];
         [self setPickedImage:nil];
     }
 }
@@ -81,7 +80,7 @@
         case UIUserInterfaceIdiomPad:
             [[self popoverController] dismissPopoverAnimated:YES];
             [self setPopoverController:nil];
-            [self displayFeatherWithImage:image];
+            [self displayPhotoEditorWithImage:image];
             break;
         default:
             break;
@@ -95,26 +94,31 @@
     [self setPopoverController:nil];
 }
 
-- (void)feather:(AFFeatherController *)featherController finishedWithImage:(UIImage *)image
+- (void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
 {
     [[self imageView] setImage:image];
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)displayFeatherWithImage:(UIImage *)image
+- (void)photoEditorCanceled:(AFPhotoEditorController *)editor
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)displayPhotoEditorWithImage:(UIImage *)image
 {
     if (image) {
         //
         // Use the following two lines to include the meme tool if desired.
         //
         // NSArray *tools = [AFDefaultTools() arrayByAddingObject:kAFMeme];
-        // AFFeatherController *featherController = [[[AFFeatherController alloc] initWithImage:image andTools:tools] autorelease];
+        // AFPhotoEditorController *featherController = [[[AFPhotoEditorController alloc] initWithImage:image andTools:tools] autorelease];
         //
-        AFFeatherController *featherController = [[[AFFeatherController alloc] initWithImage:image] autorelease];
+        AFPhotoEditorController *featherController = [[[AFPhotoEditorController alloc] initWithImage:image] autorelease];
         [featherController setDelegate:self];
         [self presentModalViewController:featherController animated:YES];
     } else {
-        NSAssert(NO, @"AFFeatherController was passed a nil image");
+        NSAssert(NO, @"AFPhotoEditorController was passed a nil image");
     }
 }
 
