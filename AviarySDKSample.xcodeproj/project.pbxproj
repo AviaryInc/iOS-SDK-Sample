@@ -14,6 +14,7 @@
 		7E5DA58C14FE811C002A0821 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5DA58B14FE811C002A0821 /* CoreData.framework */; };
 		7E5DA58E14FE8122002A0821 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5DA58D14FE8122002A0821 /* libz.1.2.5.dylib */; };
 		7E5DA59014FE8128002A0821 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5DA58F14FE8128002A0821 /* libsqlite3.0.dylib */; };
+		7E937587164307D4008BB52C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E937586164307D4008BB52C /* OpenGLES.framework */; };
 		D6C5E990145AF69D00548502 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5E98F145AF69D00548502 /* CoreText.framework */; };
 		D6EFC5EF1444876F00409DA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5EE1444876F00409DA8 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D6EFC5F11444876F00409DA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6EFC5F01444876F00409DA8 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -37,6 +38,7 @@
 		7E5DA58B14FE811C002A0821 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7E5DA58D14FE8122002A0821 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		7E5DA58F14FE8128002A0821 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		7E937586164307D4008BB52C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D6C5E98F145AF69D00548502 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		D6EFC5EA1444876F00409DA8 /* AviarySDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviarySDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EFC5EE1444876F00409DA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E937587164307D4008BB52C /* OpenGLES.framework in Frameworks */,
 				7E5DA59014FE8128002A0821 /* libsqlite3.0.dylib in Frameworks */,
 				7E5DA58E14FE8122002A0821 /* libz.1.2.5.dylib in Frameworks */,
 				7E5DA58C14FE811C002A0821 /* CoreData.framework in Frameworks */,
@@ -126,6 +129,7 @@
 		D6EFC5ED1444876F00409DA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E937586164307D4008BB52C /* OpenGLES.framework */,
 				7E5DA58F14FE8128002A0821 /* libsqlite3.0.dylib */,
 				7E5DA58D14FE8122002A0821 /* libz.1.2.5.dylib */,
 				7E5DA58B14FE811C002A0821 /* CoreData.framework */,
