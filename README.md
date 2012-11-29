@@ -1,13 +1,11 @@
-# AviarySDKSample
-
 This is a simple demo app demonstrating how to integrate the [Aviary iOS SDK][1] in a universal (iPhone/iPad) app.
 
 ## How to use
 
 Run the following to clone and open the project (the `--recursive` option is used to automatically clone the AviarySDK submodule):
 	
-    git clone --recursive git://github.com/cspicker/AviarySDKSample.git
-    open AviarySDKSample/AviarySDKSample.xcodeproj
+    git clone --recursive git://github.com/AviaryInc/iOS-SDK-Sample.git
+    open iOS-SDK-Sample/AviarySDKSample.xcodeproj
 
 ## Questions & bug reports
 
